@@ -225,4 +225,22 @@ git stash drop stash@{2}
 ```bash
 git stash clear
 ```
+### Pushing
+### Push changes to remote
+```bash
+git push origin master
+```
+### Set tracking in relation to remote
+```bash 
+git push -u origin master
+```
+### Deletes branch on remote, keeping local
+```bash
+git push origin :branchtodelete
+```
+### Deletes branch
+```bashgit push origin --delete branchtodelete
+```
+
+Source[https://carolinegabriel.com/used-git-commands-copy-paste-format/]
 
