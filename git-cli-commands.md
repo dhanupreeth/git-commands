@@ -167,5 +167,62 @@ git show 436eb47
 ```bash
 git log --oneline -3
 ```
-
+### Merging
+### Get changes from another branch
+```bash
+git merge anotherbranch
+```
+### Merge, but do not fast-forward*
+```bash
+git merge --no--ff somebranch
+```
+### Only merge if fast-forward* is possible
+```bash
+git merge --ff-only abranch
+```
+### Cancel merge
+```bash
+git merge --abort
+```
+### Stashing
+### Stash local changes
+```bash
+git stash
+```
+### Add a message to a stash
+```bash 
+git stash save "my stash message here"
+```
+### List stashes
+```bash 
+git stash list
+```
+### Lists files and inserts of the most recent stash
+```bash
+git stash show stash@{0}
+```
+### Lists files and inserts of a certain stash as diff
+```bash
+git stash show -p stash@{1}
+```
+### Applies latest stash and delete from stashes
+```bash
+git stash pop
+```
+### Applies a stash and delete from stashes
+```bash
+git stash pop stash@{1}
+```
+### Applies stash but does not delete it from stashes
+```bash 
+git stash apply
+```
+### Deletes a stash entry
+```bash
+git stash drop stash@{2}
+```
+### Removes all the stashes
+```bash
+git stash clear
+```
 
